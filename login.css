@@ -1,0 +1,154 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a global font */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+
+  /* Container for the form */
+  .form-container {
+    background-color: white;
+    padding: 40px 20px 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    min-height: 300px;
+  }
+  
+  /* Heading style */
+  .form-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #af8b58;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    margin: 7px 0 5px;
+    text-align: left;
+    color: #333;
+  }
+  
+  /* Input field styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 16px;
+  }
+  
+  /* Focus effect on inputs */
+  input:focus {
+    border-color: #af8b58;
+    outline: none;
+    background-color: #f1f1f1;
+  }
+  
+  /* Submit button styles */
+  .registerbtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #af8b58;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect on submit button */
+  .registerbtn:hover {
+    background-color: #876b44;
+  }
+  
+  /* Link styles */
+  a {
+    color: #af8b58;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }  
+
+  /* Desktop View */
+@media (min-width: 1024px) {
+    .form-container {
+        max-width: 600px; /* Larger forms for desktops */
+    }
+    h2 {
+        font-size: 28px;
+    }
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form-container {
+        max-width: 500px; /* Slightly smaller form */
+        padding: 30px; /* Adjust padding for smaller devices */
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px; /* Slightly smaller padding on tablet */
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .form-container {
+        max-width: 100%; /* Full-width on mobile */
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px; /* Smaller font for mobile */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px; /* Smaller input fields */
+        padding: 10px;  /* Adjust input padding */
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
